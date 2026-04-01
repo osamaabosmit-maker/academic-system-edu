@@ -93,7 +93,7 @@ with st.sidebar:
     uploaded_file = st.file_uploader("ارفع ملف الاختبار (DOCX)", type=['docx'])
 
     st.write("---")
-    qr = qrcode.make("https://edu-ai-zliten.streamlit.app")
+    qr = qrcode.make("https://academic-system-edu-ec6d4uqzfg5jkr28yjn9eh.streamlit.app")
     buf = io.BytesIO()
     qr.save(buf, format="PNG")
     st.image(buf.getvalue(), caption="رابط الدخول السريع", use_container_width=True)
